@@ -1,0 +1,639 @@
+@font-face {
+    font-family: 'Vazir';
+    /* prefer truetype format for the existing ttf file; consider adding woff/woff2 for production */
+    src: url('../Fonts/Vazir.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: rgb(33, 34, 49);
+    font-family: 'Vazir', sans-serif;
+    font-size: 14px;
+}
+
+.buttonStyles {
+    border-radius: 3px;
+    width: 100px;
+    height: 35px;
+    transition: all 0.25s ease;
+    font-size: 14px;
+}
+
+.buttonStyles:hover {
+    cursor: pointer;
+}
+
+.buttonStyles:active {
+    transform: scale(0.95);
+}
+
+/* شروع هدر و نوشتن نویگیشن بار بالایی*/
+.headerBox {
+    display: flex;
+    justify-content: center;
+    top: 0;
+    width: 100%;
+    height: 55px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    margin: 10px 0 10px 0;
+    z-index: 100;
+}
+
+.headerList {
+    display: flex;
+    justify-content: space-around;
+    gap: 10vw;
+    background-color: #cecece80;
+    border-radius: 40px;
+    padding: 10px 0 10px 0;
+    width: 85%;
+}
+
+.headerLeftPicture {
+    display: flex;
+    gap: 10px;
+}
+
+.myHeaderIcon {
+    width: auto;
+    height: 35px;
+    background-color: rgb(94, 59, 238);
+    border-radius: 5px;
+}
+
+.myHeaderText {
+    margin-top: 9px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.headerButtonContact {
+    border: 1px solid rgb(94, 59, 238);
+    color: rgb(94, 59, 238);
+    background-color: #ffffff7a;
+}
+
+.headerButtonContact:hover {
+    background-color: rgb(94, 59, 238);
+    color: #fff;
+}
+
+.headerListCenter {
+    display: flex;
+    gap: 20px;
+}
+
+.headerListTexts {
+    text-decoration: none;
+    transition: all 0.25s ease;
+    margin-top: 9px;
+    color: #000000;
+    font-weight: 900;
+}
+
+.headerListTexts:hover {
+    color: rgb(94, 59, 238);
+    cursor: pointer;
+}
+
+/*پایان هدر و شروع کردن قسمت بالایی و توضیحات سایت*/
+.topContent {
+    background-color: rgb(232, 252, 253);
+    height: auto;
+    width: 100%;
+    margin-top: 75px;
+}
+
+.topContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+}
+
+.writtenContent {
+    width: auto;
+    height: auto;
+}
+
+.imgInTopRightContent {
+    width: 35%;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.firstLineInfo {
+    font-size: 1.5vw;
+    font-weight: 100;
+}
+
+.SecondLineInfo, .selectedWord {
+    font-size: 3vw;
+
+}
+
+
+.thirdLineInfo {
+    font-size: 1.5vw;
+    font-weight: 100;
+}
+
+.selectedWord {
+    color: rgb(94, 59, 238);
+}
+
+.getInTouchInTop {
+    background-color: rgb(94, 59, 238);
+    color: #fff;
+    border: unset;
+}
+
+.getInTouchInTop:hover {
+    background-color: rgba(95, 59, 238, 0.658);
+}
+
+/*شروع ساختن قسمت مهارت های من  و کارت های آن*/
+.mySkillsTexts {
+    margin: 55px;
+}
+
+.mySkillsCards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    height: auto;
+}
+
+
+.cardsStyle {
+    border: solid 1px rgb(199, 247, 250);
+    border-radius: 15px;
+    width: 20%;
+    height: auto;
+    background-color: rgb(232, 252, 253);
+    padding: 25px;
+    transition: all 0.2s;
+    min-width: 150px;
+}
+
+.cardsStyle:hover {
+    cursor: pointer;
+    box-shadow: 10px 10px 10px -7px #00000093;
+    transform: translateX(-2px) translateY(-2px);
+}
+
+.icons {
+    width: 25%;
+    height: auto;
+    box-shadow: 0px 0px 10px -5px #000000;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+.mainCardsText {
+    font-size: 1.6vw;
+    font-weight: 900;
+}
+
+.subCardText {
+    font-size: 1vw;
+    font-weight: 500;
+}
+
+/*پایان ساختن قسمت مهارت های من  و کارت های آن*/
+/*شروع ساختن محتوای وسط و معرفی خودم*/
+.mainDivForCenter {
+    display: flex;
+    margin-bottom: 25vw;
+}
+
+.picForCenterOfPgae {
+    margin: 15vh 6vw 80px 5vw;
+
+}
+
+.picContentForCenter {
+    width: 40vw;
+    height: auto;
+}
+
+.TextForCenterOfPage {
+    margin-top: 18vw;
+    margin-left: 8vw;
+}
+
+.mainTextForCenterOfPage {
+    font-size: 3.5vw;
+    font-weight: 900;
+    margin-bottom: 5vh;
+}
+
+.subTextForCenterOfPage {
+    font-size: 1.1vw;
+}
+
+/*پایان وسطی ها و شروع کارت های محصولات*/
+.myProducts {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 6vw;
+}
+
+.myProductCard {
+    width: 25.3%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.25);
+    transition: all 0.1s;
+    margin-bottom: 10vw;
+}
+
+.myProductCard:hover {
+    transform: translate(-5px, -5px);
+    box-shadow: 10px 10px 15px 5px rgba(0, 0, 0, 0.25);
+}
+
+.picForProductCard {
+    width: 25vw;
+    height: auto;
+    border-radius: 10px;
+}
+
+.myCardsMainText {
+    font-size: 2vw;
+    font-weight: 900;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    margin: 15px 20px 20px 0px;
+}
+
+.myCardsSubText {
+    font-size: 1.1vw;
+    margin: 0px 20px 20px 20px;
+}
+
+.viwWebText {
+    font-size: 1.1vw;
+    margin: 0px 20px 20px 20px;
+    font-weight: 900;
+    text-decoration: none;
+    color: rgb(238, 59, 113);
+    transition: all 0.2s;
+}
+
+.viwWebText:hover {
+    color: rgba(238, 59, 113, 0.555);
+}
+
+.viwWebText:active {
+    transform: scale(0.95);
+}
+
+.viewWebFirst {
+    margin-top: 10px;
+}
+
+.myFirstCardsSubText {
+    margin-bottom: 5%;
+}
+
+.mySecondCardsSubText {
+    margin-bottom: 10%;
+}
+
+.myThirdCardsSubText {
+    margin-bottom: 5%;
+}
+
+.goLinkIcon {
+    width: 15px;
+    height: auto;
+}
+
+.mainTextProjects {
+    font-size: 3vw;
+    font-weight: 900;
+    margin-bottom: 80px;
+    margin-right: 4vw;
+}
+
+/*شروع به زدن فوتر سایت*/
+.topFooterContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.topFooterContentCenter {
+    display: flex;
+    gap: 20px;
+}
+
+.FooterContent {
+    background-color: rgb(232, 252, 253);
+    border-radius: 10px 10px 0px 0px;
+    padding: 30px;
+}
+
+.footerIcons {
+    width: 25px;
+}
+
+.topFooterContentRight {
+    display: flex;
+    margin-top: 1vw;
+    gap: 5px;
+}
+
+.bottomFooterContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+@media (max-width:900px) {
+    .headerList {
+        gap: 5vw;
+    }
+}
+
+@media (max-width:700px) {
+    .cardsStyle {
+        flex: 0 1 40%;
+    }
+
+    .topFooterContentCenter {
+        display: none;
+    }
+
+    .headerList {
+        gap: 20vw;
+    }
+}
+
+
+
+.ListIcon {
+    display: none;
+}
+
+/**/
+.hamburger {
+    font-size: 26px;
+    cursor: pointer;
+    display: none;
+}
+
+/***/
+
+
+@media (max-width:750px) {
+
+    /* hide header links in the desktop header only; keep links inside .mobile-menu visible */
+    .headerListCenter .headerListTexts {
+        display: none;
+    }
+
+    .headerButtonContact {
+        display: none;
+    }
+
+    .hamburger {
+        display: inline;
+        margin-right: -40vw;
+        font-size: 26px;
+    }
+
+}
+
+/***/
+
+
+/*در اینجا میخوام برای دکمه های ارتباط با من چیزی بنویسم.*/
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* انیمیشن ورود */
+.popup.show {
+    animation: fadeIn 0.25s ease forwards;
+}
+
+.popup.hide {
+    animation: fadeOut 0.25s ease forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+.popup-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: auto;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transform: translateY(-20px);
+    opacity: 0;
+    animation: slideUp 0.25s ease forwards;
+}
+
+/* انیمیشن بالا اومدن پاپ‌آپ */
+@keyframes slideUp {
+    from {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.close {
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+.addStyleToList {
+    display: grid;
+    align-items: center;
+}
+
+
+
+
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 40%;
+    height: 100vh;
+    background: white;
+    flex-direction: column;
+    padding-top: 60px;
+    display: none;
+    z-index: 9999;
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.mobile-menu {
+    transform: translateX(100%);
+    transition: transform 0.25s ease;
+}
+
+.mobile-menu.show {
+    display: flex;
+    transform: translateX(0);
+}
+
+
+.menu-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    z-index: 9998;
+    opacity: 0;
+    transition: opacity 0.25s ease;
+}
+
+.menu-overlay.show {
+    display: block;
+    opacity: 1;
+}
+
+/* دکمه X */
+.closeMenuBtn {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+/* فقط وقتی موبایل */
+@media (max-width:750px) {
+    .headerListCenter {
+        display: none;
+    }
+
+    /* make mobile menu links readable and touch-friendly */
+    .mobile-menu .headerListTexts {
+        display: block;
+        padding: 16px 20px;
+        font-size: 1.05rem;
+        color: #000;
+        text-decoration: none;
+        border-bottom: 1px solid #eee;
+    }
+
+    .mobile-menu.show {
+        display: flex;
+    }
+
+    .closeMenuBtn {
+        display: block;
+    }
+
+    .buttonStyles {
+        width: 70px;
+        height: 25px;
+        font-size: 10px;
+        margin-top: -50px;
+    }
+
+    .EmailAdrress {
+        font-size: 2vw;
+    }
+}
+
+@media (max-width:550px) {
+    .myHeaderText {
+        font-size: 3vw;
+        font-weight: 900;
+    }
+
+    .myHeaderIcon {
+        width: 20px;
+        height: 20px;
+        margin-top: 2vw;
+
+    }
+
+    .headerLeftPicture {
+        gap: 5px;
+    }
+
+    .mainTextProjects {
+        margin-bottom: 10vw;
+    }
+
+    .mainDivForCenter {
+        margin-bottom: -60px;
+    }
+
+    .topContent {
+        height: 250px;
+    }
+    .myProductCard{
+        height: 210px;
+    }
+    .goLinkIcon{
+        width: 8px;
+    }
+    .popup-content{
+        width: 80%;
+    }
+    .imgPopUp{
+        width: 95%;
+    }
+    .close{
+        font-size: 25px;
+    }
+    #section4-popup{
+        font-size: 3vw;
+    }
+}
